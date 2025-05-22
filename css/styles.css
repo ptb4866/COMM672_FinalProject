@@ -1,0 +1,87 @@
+:root {
+    --yellow-color: #eedf77;
+    --blue-color: #68d3fa; 
+    --gray-color: #7d7d7d;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --body-font: 'Lora', 'Libre Caslon Display', serif;
+    --heading-font: 'Libre Caslon Display', 'Lora',  serif;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+body {
+   font-family: var(--body-font)
+}
+h2, h5 {
+  font-family: var(--heading-font);
+}
+/* Logo font */
+.gloock-regular { 
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.background-danger:hover {
+    background-color: var(--yellow-color) !important;
+} 
+.border-danger {
+    border-color: var(--yellow-color) !important;
+}
+.btn-danger {
+    background-color: var(--yellow-color) !important;
+    border-color: var(--yellow-color) !important;
+}
+.transparent-btn:hover {
+  background-color: transparent !important;
+  border-color: var(--yellow-color) !important;
+}
+.text-secondary {
+    color: var(--gray-color) !important; 
+} 
+.background-white:hover {
+    background-color: var(--white-color) !important;
+} 
+
+/*Home Page*/ 
+/* Bootstrap 4 text input with search icon on the right */
+.has-search-right {
+    position: relative;
+}
+.has-search-right .form-control {
+    padding-right: 2.375rem;
+}
+.has-search-right .form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #aaa;
+}
+
+/* Locations */ 
+.location-link:hover {
+  text-decoration: underline;
+  
+}
+
+.footer-link {
+  color: var(--yellow-color);
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-icon {
+  color: var(--yellow-color);
+  font-size: 1.25rem;
+}
+.footer-icon:hover {
+  opacity: 0.8;
+}
+
