@@ -10,6 +10,10 @@
 .nav-link:hover {
   text-decoration: underline;
 }
+.nav-link.active {
+  border: 1px solid var(--yellow-color);
+  border-radius: 5px;
+}
 body {
    font-family: var(--body-font)
 }
@@ -42,6 +46,21 @@ h2, h5 {
 .background-white:hover {
     background-color: var(--white-color) !important;
 } 
+.footer-link {
+  color: var(--yellow-color);
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-icon {
+  color: var(--yellow-color);
+  font-size: 1.25rem;
+}
+.footer-icon:hover {
+  opacity: 0.8;
+}
+
 
 /*Home Page*/ 
 /* Bootstrap 4 text input with search icon on the right */
@@ -84,18 +103,16 @@ h2, h5 {
     right: 20px;
     z-index: 100;
 }
-.footer-link {
-  color: var(--yellow-color);
-  text-decoration: none;
-}
-.footer-link:hover {
-  text-decoration: underline;
-}
-.footer-icon {
-  color: var(--yellow-color);
-  font-size: 1.25rem;
-}
-.footer-icon:hover {
-  opacity: 0.8;
+
+/* Contact Page */ 
+
+.form-container {
+  max-width: 700px;
+  margin: auto;
 }
 
+.form-label {
+  font-weight: 500;
+}
+
+   
