@@ -77,7 +77,12 @@ h2, h5 {
   text-decoration: underline;
   
 }
-
+#mobile-post-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
 .footer-link {
   color: var(--yellow-color);
   text-decoration: none;
