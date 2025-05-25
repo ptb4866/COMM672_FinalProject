@@ -104,6 +104,14 @@ h2, h5 {
     z-index: 100;
 }
 
+/* Account Page */ 
+ .form-box {
+      margin: auto;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    
 /* Contact Page */ 
 
 .form-container {
@@ -115,4 +123,11 @@ h2, h5 {
   font-weight: 500;
 }
 
-   
+#signin-tab, #signup-tab {
+  color: var(--black-color);
+}
+#signup-tab.active, #signin-tab.active {
+  color: var(--gray-color);
+}
+
+
