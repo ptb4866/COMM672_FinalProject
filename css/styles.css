@@ -10,10 +10,10 @@
 .nav-link:hover {
   text-decoration: underline;
 }
-.nav-link.active {
+#top-bar-nav .nav-link.active  {
   border: 1px solid var(--yellow-color);
-  border-radius: 5px;
-}
+  border-radius: 5px;  
+}  
 body {
    font-family: var(--body-font)
 }
@@ -60,8 +60,6 @@ h2, h5 {
 .footer-icon:hover {
   opacity: 0.8;
 }
-
-
 /*Home Page*/ 
 /* Bootstrap 4 text input with search icon on the right */
 .has-search-right {
@@ -103,7 +101,6 @@ h2, h5 {
     right: 20px;
     z-index: 100;
 }
-
 /* Account Page */ 
  .form-box {
       margin: auto;
@@ -113,21 +110,28 @@ h2, h5 {
     }
     
 /* Contact Page */ 
-
 .form-container {
   max-width: 700px;
   margin: auto;
 }
-
 .form-label {
   font-weight: 500;
 }
-
 #signin-tab, #signup-tab {
   color: var(--black-color);
 }
 #signup-tab.active, #signin-tab.active {
   color: var(--gray-color);
+}
+
+ /* Adjustments for smaller screens */
+@media screen and (max-width: 992px) {
+  
+  #top-bar-nav .nav-link.active  {
+    border:none; 
+    text-decoration: underline;
+  }
+   
 }
 
 
