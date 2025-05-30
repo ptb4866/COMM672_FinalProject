@@ -83,7 +83,7 @@
       <ul class="d-flex list-unstyled w-100 pt-3 pb-2 gap-2  breadcrumbs mx-4">
 
         <li class="nav-item">
-          <a href="index.html" class="nav-link active">Home</a>
+          <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">Community</a>
@@ -95,7 +95,7 @@
           <a href="#" class="nav-link">Gigs</a>
         </li>
         <li class="nav-item">
-          <a href="housing.html" class="nav-link">Housing</a>
+          <a href="housing.html" class="nav-link active" >Housing</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">Jobs</a>
@@ -115,176 +115,83 @@
     </nav>
 
  
-    <main class="container-fluid py-4">
-        <div class="row g-4">
-          <!-- Sidebar -->
-          <aside class="col-12 col-lg-3 ">
+    <!--Main Page-->
+     <main id="homePage">
 
-            <div class="row"> 
-              <div class="col-sm-12 col-md-6 mx-auto col-lg-12">
-                  <h2 class="text-center">Event Calendar</h2>
-                  <iframe 
-                        width="100%"
-                        aspect-ratio= 16/9;
-                        src="https://calendar.google.com/calendar/embed?src=945c266efb035da8c7c0f3b738d93e40b46b03c197a2fa9d2d16b9f2c9e3e4c8%40group.calendar.google.com&ctz=America%2FNew_York" 
-                        style="border: 0"   
-                        height="300" 
-                        frameborder="0" 
-                        scrolling="no">
-                  </iframe>
+      <section class="list-container">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="swap.html" class="nav-link">housing swap</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link">parking & storage</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link">rooms & shares</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link">vacation rentals</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link">sublets & temporary</a></li>
+        </ul>
+      </section>
 
-                  <hr/>
-              </div>    
-              <h5 class="d-none d-lg-block">Featured Near By Events</h5> 
-
-              <div class ="d-none d-lg-block col-lg-12 mb-3"> 
-                
-                  <div class="card">
-                    <img src="images/event1.jpg" class="card-img-top" alt="...">
+      <section class="list-container">
+          <div class="d-flex my-5 justify-content-center flex-wrap gap-3">
+              
+              <div class="d-flex justify-content-center">
+                <div class="card card-housing" style="max-width: 350px;">
+                    <img src="images/house.jpg" class="card-img-top" alt="House exterior">
                     <div class="card-body">
-                      <h5 class="card-title">Contemporary Dance</h5>
-                      <p class="card-text">Performing Arts Series brings contemporary dance to northern San Diego communities</p>
-                      <a href="#" class="btn btn-danger transparent-btn  text-dark">Discover</a>
+                    <h5 class="card-title">New homes daily.</h5>
+                    <p class="card-text">Rented or owned, small or large...</p>
+                    <button class="btn btn-danger background-white mt-3 text-dark">Buy locally</button>
                     </div>
-                  </div> 
+                </div>
               </div>
-              <div class ="d-none d-lg-block col-lg-12 mb-3"> 
-                  <div class="card">
-                    <img src="images/event2.jpg" class="card-img-top" alt="...">
+
+              <div class="d-flex justify-content-center">
+                <div class="card card-housing" style="max-width: 350px;">
+                    <img src="images/house1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Designing For the Circus</h5>
-                      <p class="card-text">Acrobats catapult through the air, whirling around a colossal white cube wearing sculptural animal masks and street style-inspired tailored suiting</p>
-                      <a href="#" class="btn btn-danger transparent-btn  text-dark">Discover</a>
+                    <h5 class="card-title">Find your perfect rental.</h5>
+                    <p class="card-text">No nightly fees. Just pay for cleaning + a small service fee per trip. New members can book up to 5 nights before they host.</p>
+                    <button class="btn btn-danger background-white mt-3 text-dark">Rent locally</button>
                     </div>
-                  </div> 
-              </div>
-                
-          </aside>
-
-
-
-          <!-- Cards -->
-          <section class="col-12 col-lg-7">
-            <div class="row g-4 ">
-              <div class="col-12 col-md-6 col-lg-4 max-card-width">
-                <div class="card border ">
-                  <div class="card-body">
-                    <h5 class="card-title">Community</h5>
-                    <img src="images/community.jpg" class="img-fluid rounded mb-2" alt="Community">
-                    <p> See what's happening around your neighborhood.</p>
-                  </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4 max-card-width">
-                <div class="card border">
-                  <div class="card-body">
-                    <h5 class="card-title">Housing</h5>
-                    <img src="images/housing.jpg" class="img-fluid rounded mb-2" alt="Housing">
-                    <p> Looking for a place to live? You've come to the right place. </p>
-                  </div>
+
+              <div class="d-flex justify-content-center">
+                <div class="card card-housing" style="max-width: 350px;">
+                    <img src="images/house2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">List your home for potential buyers.</h5>
+                    <p class="card-text">Earn credits each time you host. You’ll meet and approve who stays in your home and Kindred will take care of the rest.</p>
+                    <button class="btn btn-danger background-white mt-3 text-dark">Sell locally</button>
+                    </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4 max-card-width">
-                <div class="card border">
-                  <div class="card-body">
-                    <h5 class="card-title">Jobs</h5>
-                    <img src="images/jobs.jpg" class="img-fluid rounded mb-2" alt="Jobs">
-                    <p> Find your dream job here. Many opportunities await you.</p>
-                  </div>
+              
+              <div class="d-flex justify-content-center">
+                <div class="card card-housing" style="max-width: 350px;">
+                    <img src="images/house2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">List your home for potential buyers.</h5>
+                    <p class="card-text">Earn credits each time you host. You’ll meet and approve who stays in your home and Kindred will take care of the rest.</p>
+                    <button class="btn btn-danger background-white mt-3 text-dark">Sell locally</button>
+                    </div>
                 </div>
-              </div>   
+              </div>
 
-              <div class="col-12 col-md-6 col-lg-4 max-card-width">
-                <div class="card border">
-                  <div class="card-body">
-                    <h5 class="card-title">Services</h5>
-                    <img src="images/services.jpg" class="img-fluid rounded mb-2" alt="Services">
-                    <p> Need help with something? Check out the services offered by our community.</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-12 col-md-6 col-lg-4 max-card-width">
-                <div class="card border">
-                  <div class="card-body">
-                    <h5 class="card-title">Sales</h5>
-                    <img src="images/sales.jpg" class="img-fluid rounded mb-2" alt="Sales">
-                    <p> Discover great deals on items for sale in your area. Find what you need at a price you love.</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-12 col-md-6 col-lg-4 max-card-width">
-                <div class="card border">
-                  <div class="card-body">
-                    <h5 class="card-title">Discussions</h5>
-                    <img src="images/discussions.jpg" class="img-fluid rounded mb-2" alt="Discussions">
-                    <p> Join the conversation! Engage with others in your community on various topics.</p>
-                  </div>
-                </div>
-              </div> 
+          </div>
+      </section>
+
+        
+      <section class="list-container p-3">
+        <div class="row">
+
+          <h2 class="col-12">Featured Story</h2>
+          <img class="col-12 mb-5" src="images/house3.jpg" alt="">
+          <p class="gallery mainStory col-12 px-5">The passage of time is also recorded while sketching the plan of the little house. Enric and Benedetta gave their small daughter a miniature chair and she started to play with it, taking her first steps with it and moving it. Like if trying to draw these movements on the floor, the parents generated the plan of the house. From its limits a timber framework was brought to life which forms the volumes which embraces, exactly like a dress, the movement of the girl with her chair and the adults sitting around the table.
+              At this point in the design process, the architects brought an old drawing by the architect Le Corbusier where a girl asks an adult to play with her, inviting him to enter a house through a small door to the world at her size. The house in Kolonihaven varies in height. It has a very low ceiling in the children's room but becomes higher by the sitting room for adults. Seen through its section, the house captures this passage of time - the house grows with the inhabitant, from being a child to become an adult. <span>Read More...</span></p>
+        
+         </div>
+      </section>
+  
+     </main>
  
-              <div class="col-12 col-md-6 col-lg-4 max-card-width">
-                <div class="card border">
-                  <div class="card-body">
-                    <h5 class="card-title">Resume</h5>
-                    <img src="images/resume.jpg" class="img-fluid rounded mb-2" alt="Resume">
-                    <p> Create or update your resume to showcase your skills and experience. Get noticed by potential employers.</p>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-12 col-md-6 col-lg-4 max-card-width">
-                <div class="card border">
-                  <div class="card-body">
-                    <h5 class="card-title">Gigs</h5>
-                    <img src="images/gigs.jpg" class="img-fluid rounded mb-2" alt="Gigs">
-                    <p>Whether you're looking for short-term work or freelance projects, find gigs that match your skills.</p>
-                  </div>
-                </div>
-              </div> 
-            </div>          
-          </section>
-
-          <!-- Locations -->
-          <aside class="col-12 col-lg-2">
-            <div class="bg-white border rounded p-3">
-              <h5 class="mb-3 text-center">Other languages / locations</h5>
-              <ul class="list-unstyled text-center">
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">bakersfield</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">flagstaff</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">fresno</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">gold country</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">hanford</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">imperial co</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">inland empire</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">las vegas</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">merced</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">modesto</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">mohave co</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">monterey</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">orange co</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">palm springs</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">phoenix</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">prescott</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">sacramento</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">san luis obispo</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">santa obispo</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">santa barbera</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">santa maria</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">sf bay area</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">show lo</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">sierra vista</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">st george</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">stockton</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">tucson</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">ventura</a></li>
-                <li class="location-link"><a href="#" class="text-decoration-none text-secondary">visalia-tulare</a></li>
-
-              </ul>
-            </div>
-          </aside>
-        </div>
-      </main>
-
-
 
     <footer class="bg-dark text-white py-5">
       <div class="container">

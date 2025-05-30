@@ -4,6 +4,7 @@
     --gray-color: #7d7d7d;
     --white-color: #ffffff;
     --black-color: #000000;
+    --light-blue-color: #68D3FA;
     --body-font: 'Lora', 'Libre Caslon Display', serif;
     --heading-font: 'Libre Caslon Display', 'Lora',  serif;
 }
@@ -46,6 +47,16 @@ h2, h5 {
 .background-white:hover {
     background-color: var(--white-color) !important;
 } 
+.breadcrumbs {
+  font-size: 0.9em;
+  color: var(--gray-color);
+}
+.breadcrumbs .active {
+  color: var(--light-blue-color)
+}
+.list-group-item {
+  color: var(--gray-color) 
+}
 .footer-link {
   color: var(--yellow-color);
   text-decoration: none;
@@ -60,6 +71,8 @@ h2, h5 {
 .footer-icon:hover {
   opacity: 0.8;
 }
+
+
 /*Home Page*/ 
 /* Bootstrap 4 text input with search icon on the right */
 .has-search-right {
@@ -88,6 +101,10 @@ h2, h5 {
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.max-card-width {
+  max-width: 470px;
+
 }
 /* Locations */ 
 .location-link:hover {
@@ -124,7 +141,211 @@ h2, h5 {
   color: var(--gray-color);
 }
 
- /* Adjustments for smaller screens */
+/* About Page */
+#aboutPage {
+  display: flex;
+  flex-direction: column;
+}
+.about {
+  margin: 20px;
+}
+.mid-section {
+  color: #fff;
+  background-color: #2B2E63;
+  margin: 10px 10px 10px 10px;
+}
+.midSection {
+  background-color: #2B2E63;
+  margin: 0;
+}
+.txt-about {
+  margin: 10px;
+  padding: 0px 0px 0px 10px;
+  text-align: left;
+}
+.txt-about h3 {
+  margin: 10px;
+  padding: 10px;
+}
+.carousel-caption .d-none .d-md-block {
+background-color: var(--white-color)
+}
+.carousel {
+ margin-top: auto;
+}
+.about img {
+    width:60%;
+  
+  }
+/* Housing page*/ 
+.list-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.h1Housing  {
+  color: var(--black-color);
+  text-align: center;
+}
+.housingSell li { 
+  font-size: 1.2em; 
+}
+  
+/* Swap Page */ 
+
+.swap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+ img.swap {
+   max-width: 100%;
+ }
+ .swapImage {
+   width: 100%;
+   
+ }
+.swap-list .active {
+  color:var(--light-blue-color)
+
+}
+.container {
+    display: flex;
+    font-size: 16px;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 900px; 
+    box-sizing: border-box;
+ }
+ .swap-mid {
+    background-color: #2B2E63;
+    color: #fff;
+    max-width: 100%;
+    text-align: center;
+}
+.swap-housing-book  {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: 3em;
+    padding: 20px;
+ 
+    text-align: center;
+}
+
+ .cover {
+   position: relative;
+   width: 100%;
+   height:auto;
+   background-image: url(Images/swapImage1.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+ .cover::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 1;
+ }
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@media screen and (min-width: 650px) {
+  #aboutPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about img {
+     width:30%;
+    
+   }
+   .card-swap {
+     max-width: 300px;
+
+   }
+
+ 
+  .mid-section {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 0;
+   }
+  .midSection {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 0;
+     background-color: #2B2E63;
+   }
+  .gallery{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 2em;
+   }
+  .mainStory {
+     display: flex;
+     flex-direction: column;
+   }
+  p::first-letter  .mainStory{
+     font-size: 2em;
+   }
+  .swap {
+     grid-template-columns: 1fr 1fr;
+     margin: 0 auto;
+     padding: 20px;
+     max-width: 600px;
+   }
+   
+  
+}
+@media screen and (min-width: 900px)  {
+  img {
+    margin: 0 auto;
+  }
+    .midSection {
+      margin: 0;
+    }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .left-section {
+    max-width: 960px;
+  }
+  .swap {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+  }
+  .swapImage {
+    display: flex;
+  }
+  .cover::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+}
+
 @media screen and (max-width: 992px) {
   
   #top-bar-nav .nav-link.active  {
