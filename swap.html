@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/cfbe0d3908.js" crossorigin="anonymous" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
@@ -99,7 +103,7 @@
     </div-->
           
     
-    <!---- Breadcrumbs -->
+    <!-- Breadcrumbs -->
     <nav class="nav-breadcrumbs">
       <ul class="d-none d-lg-flex list-unstyled w-100 pt-3 pb-2 gap-2  breadcrumbs mx-4">
 
@@ -116,7 +120,7 @@
           <a href="#" class="nav-link">Gigs</a>
         </li>
         <li class="nav-item">
-          <a href="housing.html" class="nav-link" >Housing</a>
+          <a href="housing.html" class="nav-link">Housing</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">Jobs</a>
@@ -124,19 +128,19 @@
         <li class="nav-item">
           <a href="#" class="nav-link">Services</a>
         </li>
-       
         
       </ul>
 
     </nav>
 
- 
+   
     <!--Main Page-->
-     <main id="homePage">
+     <main id="list-container">
+          <h1 class="fs-1 text">Swap housing page</h1>
 
       <section class="list-container">
         <ul class="list-group swap-list">
-          <li class="list-group-item"><a href="swap.html" class="nav-link active">swap housing</a></li>
+          <li class="list-group-item"><a href="swap.html" class="nav-link active border-0 text-decoration-underline">swap housing</a></li>
           <li class="list-group-item"><a href="#" class="nav-link">parking & storage</a></li>
           <li class="list-group-item"><a href="#" class="nav-link">rooms & shares</a></li>
           <li class="list-group-item"><a href="#" class="nav-link">vacation rentals</a></li>
@@ -145,20 +149,27 @@
       </section>
       
       <section class="housingSell list-container">
-          <h1 class="h1Housing list-container">Travel more, spend less. Live like a local.</h1>
-        <ol>
-            <li> Vetted, members-only community</li>
-            <li> Stay up to 5 nights before hosting</li>
-            <li>  Flexible credit system - no direct swap needed</li>
-        </ol>
+        <div class="grid text-center">
+         <h2 class="h1Housing list-container fs-1 text">Travel more, spend less. Live like a local.</h2>
+        </div>
+     <div class="grid text-center">
+  <nav>
+    <ul class="list-none d-none">
+      <li class="grid text-center">Vetted, members-only community</li>
+      <li class="grid text-center">Stay up to 5 nights before hosting</li>
+      <li class="grid text-center">Flexible credit system - no direct swap needed</li>
+    </ul>
+  </nav>
+</div>
+         
       </section>
-
-      <section class="list-container">
+        <section class="list-container">
           <div class="d-flex my-5 justify-content-center flex-wrap gap-3">
               
               <div class="d-flex justify-content-center">
-                <div class="card card-swap">
-                    <img src="images/swapImage2.png" class="card-img-top" alt="House exterior">
+                <div class="card card-housing" style="max-width: 350px;">
+
+                    <img src="Images/swapImage2.png" class="card-img-top" alt="House exterior">
                     <div class="card-body">
                     <h5 class="card-title">Apply to unlock access.</h5>
                     <p class="card-text">Rented or owned, small or large - we’re looking for safe, well-cared-for homes occupied by people who love to travel.</p>
@@ -168,19 +179,19 @@
               </div>
 
               <div class="d-flex justify-content-center">
-                <div class="card card-swap">
-                    <img src="images/swapimage3-8.png" class="card-img-top" alt="...">
+                <div class="card card-housing" style="max-width: 350px;">
+                    <img src="Images/swapimage3-8.png" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Book available homes.</h5>
-                    <p class="card-text">No nightly fees. Just pay for cleaning + a small service fee per trip. New members can book up to 5 nights before they host.No nightly fees. Just pay for cleaning + a small service fee per trip. New members can book up to 5 nights before they host.</p>
+                    <p class="card-text">.No nightly fees. Just pay for cleaning + a small service fee per trip. New members can book up to 5 nights before they host.</p>
                     <button class="btn btn-danger background-white mt-3 text-dark">Go somewhere</button>
                     </div>
                 </div>
               </div>
 
-              <div class="d-flex justify-content-center">
-                <div class="card card-swap">
-                    <img src="images/swapimage4-8.png" class="card-img-top" alt="...">
+             <div class="d-flex justify-content-center">
+                <div class="card card-housing" style="max-width: 350px;">
+                    <img src="Images/swapimage4-8.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Host and earn travel credits.</h5>
                     <p class="card-text">Earn credits each time you host. You’ll meet and approve who stays in your home and Kindred will take care of the rest.</p>
@@ -192,26 +203,29 @@
           </div>
       </section>
 
-     <section class="container row swap-mid">
-        <div>
-            <h2 class="swap-housing-book list-container">Book up to 5 nights before you host</h2>
-            <p>New members start with 5 credits so you can start booking travel. Earn more credits when you host.</p>
+  
+
+    <section class="swapImage container-fluid my-12">
+         <div class="grid text-center">
+        <div class="text-bg-dark p-3">
+            <h2 class="swap-housing-book list-container fs-2 text">Book up to 5 nights before you host</h2>
+            <p class="py-4">New members start with 5 credits so you can start booking travel. Earn more credits when you host.</p>
             <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="button" class="btn btn-primary btn-lg center">Learn more</button>
+            <button type="button" class="btn btn-primary btn-lg center py-4">Learn more</button>
             </div>
+        </div>
         </div>
      </section>
 
-     
-    <section class="swapImage container">
-        <div class="swapImage">
-        <img  class="cover" src="images/swapImage1.png" class="img-fluid" alt="House Image">
-        <div class="swap-mid2">
-            <h2 class="h1Housing list-container content">Swap & stay for a fraction of the cost</h2>
-            <p>7 night stay comparison</p>
-        </div>
-    </div>
-    </section>
+  
+    <!-- Hero / Cover Image Section -->
+<div class="position-relative overflow-hidden" style="height: 60vh;">
+  <img src="images/swapImage1.png"  class="w-100 h-100 object-fit-cover" alt="Cover Image">
+  <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+    <h2 class="display-4">Swap & stay for a fraction of the cost</h2>
+    <p class="lead">7 night stay comparison</p>
+  </div>
+</div>
   
      </main>
  
@@ -347,6 +361,8 @@
     </div>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+ <script>
  
+</script>
 </body>
 </html>
