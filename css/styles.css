@@ -59,10 +59,11 @@ h2, h5 {
 .list-group-item {
   color: var(--gray-color) 
 }
+/*
 .list-container {
   max-width: 960px;
   margin: 0 auto;
-}
+}*/
 .footer-link {
   color: var(--yellow-color);
   text-decoration: none;
@@ -155,14 +156,14 @@ h2, h5 {
   max-width: 350px
 }
 /*Swap page*/
-.h1Housing  {
+/*.h1Housing  {
   color: var(--black-color);
   text-align: center;
 }
 .housingSell li { 
   font-size: 1.2em; 
 }
-
+*/
 
 @media screen and (max-width: 992px) {
   
