@@ -59,11 +59,6 @@ h2, h5 {
 .list-group-item {
   color: var(--gray-color) 
 }
-/*
-.list-container {
-  max-width: 960px;
-  margin: 0 auto;
-}*/
 .footer-link {
   color: var(--yellow-color);
   text-decoration: none;
@@ -78,7 +73,6 @@ h2, h5 {
 .footer-icon:hover {
   opacity: 0.8;
 }
-
 /*Home Page*/ 
 /* Bootstrap 4 text input with search icon on the right */
 .has-search-right {
@@ -125,7 +119,6 @@ h2, h5 {
     right: 20px;
     z-index: 100;
 }
-
 /* Account Page */ 
  .form-box {
       margin: auto;
@@ -135,7 +128,6 @@ h2, h5 {
     }
     
 /* Contact Page */ 
-
 .form-container {
   max-width: 700px;
   margin: auto;
@@ -155,16 +147,6 @@ h2, h5 {
 .housing-card-max-width {
   max-width: 350px
 }
-/*Swap page*/
-/*.h1Housing  {
-  color: var(--black-color);
-  text-align: center;
-}
-.housingSell li { 
-  font-size: 1.2em; 
-}
-*/
-
 @media screen and (max-width: 992px) {
   
   #top-bar-nav .nav-link.active  {
